@@ -1,0 +1,50 @@
+.garant
+  &__title
+    display: block
+    max-width: 650px
+    margin: auto
+    margin-bottom: 100px
+    text-align: center
+    font-size: 30px
+    line-height: 45px
+    +bold
+  &-wrap
+    display: flex
+    justify-content: space-between
+    margin-bottom: 100px
+    flex-wrap: wrap
+  &-card
+    margin-top: 0
+    max-width: 290px
+    text-align: center
+    &__image
+      margin-right: 0
+      margin-bottom: 45px
+    &__text 
+      font-size: 18px
+      line-height: 24px
+@media (max-width: 1200px)
+  .garant
+    &-wrap
+      justify-content: center
+    &-card
+      margin: 25px
+@media (max-width: 768px)
+  .garant
+    &__title
+      max-width: 550px
+      font-size: 24px
+@media (max-width: 567px)
+  .garant
+    &__title
+      font-size: 18px
+      margin-bottom: 40px
+      line-height: 20px
+    &-card
+      &__image
+        margin-bottom: 20px
+      &__text
+        display: block
+        margin: auto
+        max-width: 230px
+        font-size: 14px

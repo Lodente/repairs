@@ -1,0 +1,58 @@
+.assist
+  &-header
+    display: block
+    background-color: $assist-color
+    &__title
+      max-width: 950px
+      margin: auto
+      text-align: center
+      +reg
+      font-size: 32px
+      line-height: 50px
+  &-wrap
+    display: flex
+    justify-content: space-between
+    align-items: center
+    flex-wrap: wrap
+  &-card
+    position: relative
+    max-height: 410px
+    width: 370px
+    background-color: $assist-card
+    z-index: 2
+    &__text
+      display: block
+      margin-top: 25px
+      margin-left: 25px
+      margin-bottom: 50px
+      max-width: 290px
+      font-size: 16px
+      line-height: 23px
+      z-index: 3
+    &__image
+      img
+        display: block
+        width: 100%
+        max-height: 260px
+@media (max-width: 1200px)
+  .assist
+    &-wrap
+      justify-content: center
+    &-card
+      margin: 25px
+@media (max-width: 768px)
+  .assist
+    &-header
+      &__title
+        max-width: 500px
+        font-size: 22px
+        line-height: 24px
+@media (max-width: 567px)
+  .assist
+    &-card
+      &__text
+        font-size: 13px
+        margin: 20px
+    &-header
+      &__title
+        font-size: 20px

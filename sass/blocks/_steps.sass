@@ -1,0 +1,45 @@
+.steps
+  &__title
+    margin: auto
+    margin-bottom: 60px
+  &__subtitle
+    text-align: center
+    margin-bottom: 50px
+  &__wrap
+    display: flex
+    justify-content: space-between
+    align-items: center
+  &__description
+    display: block
+    font-size: 14px
+    line-height: 20px
+  &__block 
+    max-width: 155px
+    height: 200px
+    text-align: center
+  &__image
+    width: 100px
+    height: 100px
+    padding: 30px
+    margin: auto
+    margin-bottom: 30px
+    border: 2px solid $border-color
+    border-radius: 50%
+
+@media (max-width: 768px)
+  .steps
+    &__arrow
+      display: none
+    &__title
+      font-size: 18px
+    &__subtitle
+      font-size: 14px
+    &__description
+      font-size: 14px
+      line-height: 16px
+    &__wrap
+      flex-wrap: wrap
+      justify-content: center
+    &__block
+      margin-right: 10px
+      margin-bottom: 20px
